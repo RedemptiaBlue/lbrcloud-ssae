@@ -1,0 +1,17 @@
+.App {
+    text-align: center;
+    background-color: #152238;
+    height: 100vh;
+    color: white;
+}
+
+Form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 20px;
+}
+
+Form button {
+    border-radius: 5px;
+}
