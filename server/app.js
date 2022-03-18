@@ -20,9 +20,13 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
+app.get('/', (req, res) => {
+  res.send("Homepage")
+})
+
 app.use('/gifts', giftsRouter)
 app.use('/users', usersRouter)
-//app.use('/db', db)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
